@@ -1,0 +1,7 @@
+from datetime import date
+a = date(2005, 10, 5)
+b = date(2026, 4, 20)
+diff = b - a
+print("No of days she lived:", diff.days)
+print("Total seconds:", diff.total_seconds())
+print("Custom value (seconds / 3000):", diff.total_seconds() / 3000)
