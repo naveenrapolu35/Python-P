@@ -1,11 +1,11 @@
-a = "AAACCCBAABB"
-result = ""
-count = 1
+a = input("Enter any string:")
+c=1
+res = " "
 for i in range(len(a)):
-    # Check next character safely
     if i < len(a) - 1 and a[i] == a[i + 1]:
-        count += 1
+        c = c+1
     else:
-        result += a[i] + str(count)
-        count = 1  # reset
-print(result)
+        res = res + a[i]
+        res += a[i] + str(c)
+        c = 1  
+print(res)
